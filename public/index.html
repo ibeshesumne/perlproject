@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter Archive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Letter Archive</h1>
+
+    <!-- Form to Add a Letter -->
+    <form id="addLetterForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="sender">Sender:</label>
+        <input type="text" id="sender" name="sender" required>
+        
+        <label for="recipient">Recipient:</label>
+        <input type="text" id="recipient" name="recipient" required>
+        
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" required></textarea>
+        
+        <button type="submit">Add Letter</button>
+    </form>
+
+    <hr>
+
+    <!-- Table to Display Letters -->
+    <h2>Existing Letters</h2>
+    <table id="lettersTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Sender</th>
+                <th>Recipient</th>
+                <th>Date</th>
+                <th>Content</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be populated dynamically -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
