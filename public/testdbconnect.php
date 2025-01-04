@@ -5,4 +5,5 @@ $stmt = $pdo->query("SHOW TABLES");
 while ($row = $stmt->fetch()) {
     echo $row[0] . "<br>";
 }
+
 ?>
